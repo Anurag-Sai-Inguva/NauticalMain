@@ -1,0 +1,24 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Dialog id="charteringrequest" class="sapUiContentPadding" contentWidth="400px" contentHeight="300px" title="Chartering Request">
+        <content>
+            <Table width="80%" items="{Vdata>/CharteringNumbers}">
+                <columns>
+                    <Column width="50px">
+                        <Label text=" "></Label>
+                    </Column>
+                    <Column >
+                        <Label text="Chartering Request No"></Label>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem >
+                        <cells>
+                            <RadioButton></RadioButton>
+                            <Text text="{Vdata>charreqnum}"></Text>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Dialog>
+</core:FragmentDefinition>

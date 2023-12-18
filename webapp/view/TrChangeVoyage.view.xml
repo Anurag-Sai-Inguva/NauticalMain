@@ -1,0 +1,20 @@
+<mvc:View controllerName="nauticalfe.controller.TrChangeVoyage"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:semantic="sap.m.semantic" xmlns:core="sap.ui.core" xmlns:tnt="sap.tnt" xmlns:cards="sap.f.cards"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+   <Bar id="navbar">
+      <contentLeft>
+        <Button id="_IDGenButton1" text="Save" width="100px" class="planNav"/>
+        <Button id="_IDGenButton2" text="Refresh" width="100px" class="planNav"/>
+        <Button id="_IDGenButton3" text="Frieght Simulator" width="150px" class="planNav"/>
+        <Button id="_IDGenButton4" text="Copy" width="100px" class="planNav"/>
+        <Select id="_IDGenSelect1" width="100px" >
+            <items>
+                <core:Item id="_IDGenItem1" text="more"/>
+            </items>
+        </Select>
+      </contentLeft>
+    </Bar>
+</mvc:View>

@@ -1,0 +1,585 @@
+/* Enter your custom styles here */
+.sapUshellShellHeader{
+    background-color: black;
+}
+
+  .layout{
+    margin-top: -7%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid rgb(238, 234, 234);
+    
+  }
+  /* for border*/
+  #application-nauticalfe-display-component---View2--mainSplitter-content-1{
+    border: 2px solid grey;
+    height: 400px;
+}
+#application-nauticalfe-display-component---View2--mainSplitter-content-2{
+    border: 2px solid grey;
+    height: 400px;
+}
+#application-nauticalfe-display-component---View2--mainSplitter-content-0{
+    border: 2px solid grey;
+    height: 400px;
+}
+/*for button color*/
+.sapMBtnInner.sapMBtnText {
+    color: red;
+    border: 1px solid red;
+     
+}
+/*for help button color*/
+/*.sapUiIcon::before{
+    color: rgb(245, 131, 131);
+    
+}*/
+#application-nauticalfe-display-component---View2--_IDGenButton4-img{
+    color: red; /*for refresh button*/
+}
+
+/*for value help button*/
+#application-nauticalfe-display-component---View2--_IDGenInput2-vhi{
+    color: rgb(245, 131, 131);
+}
+#application-nauticalfe-display-component---View2--_IDGenInput3-vhi{
+    color: rgb(245, 131, 131);
+}
+#application-nauticalfe-display-component---View2--_IDGenInput4-vhi{
+    color: rgb(245, 131, 131);
+}
+#application-nauticalfe-display-component---View2--_IDGenInput5-vhi{
+    color: rgb(245, 131, 131);
+}
+/*------------*/
+
+
+
+.sapUiSizeCompact .sapMBtnInner{
+    color: red;
+    border: 1px solid red;
+}
+#application-nauticalfe-display-component---View2--_IDGenButton4-inner{
+    color: red;
+}
+#application-nauticalfe-display-component---View2--_IDGenButton3-inner{
+    background-color: red;
+    color: white;
+}
+
+#application-nauticalfe-display-component---View2--_IDGenButton3-BDI-content{
+    background-color: red;
+    color: white;
+}
+
+/*for button hover*/
+.sapMBtn:hover:not(.sapMBtnDisabled):not(.sapMSBActive) >
+ .sapMBtnHoverable:not(.sapMBtnDisabled):not(.sapMBtnActive):not(.sapMToggleBtnPressed):not(.sapMBtnTransparent).sapMBtnDefault, .sapMBtn:hover:not(.sapMBtnDisabled):not(.sapMSBActive) >
+ .sapMBtnHoverable:not(.sapMBtnDisabled):not(.sapMBtnActive):not(.sapMToggleBtnPressed):not(.sapMBtnTransparent).sapMBtnBack, .sapMBtn:hover:not(.sapMBtnDisabled):not(.sapMSBActive) >
+ .sapMBtnHoverable:not(.sapMBtnDisabled):not(.sapMBtnActive):not(.sapMToggleBtnPressed):not(.sapMBtnTransparent).sapMBtnGhost {
+    color: red;
+    background-color: rgba(234, 144, 130, 0.299);
+}
+#__data15{
+    padding: 7px;
+}
+#__data17{
+    padding: 7px;
+}
+#__data18{
+    padding: 7px;
+}
+.sapMListTblCell{
+    border: 1px solid rgb(246, 243, 243);
+}
+
+/*for view 3 headers*/
+
+#application-nauticalfe-display-component---View3--header2{
+    background-color:white
+}
+#application-nauticalfe-display-component---View3--header3{
+    background-color:rgb(25, 134, 134);
+    height: 40px;
+}
+#application-nauticalfe-display-component---View3--header4{
+    background-color:rgb(25, 134, 134);
+    height: 40px;
+}
+#application-nauticalfe-display-component---View3--header5{
+    background-color:rgb(25, 134, 134);
+    height: 45px;
+}
+#container-nauticalfe---View3--header3{
+    background-color: rgb(18, 116, 116) !important;
+    height:45px;
+}
+#container-nauticalfe---View3--header4{
+    background-color: rgb(18, 116, 116) !important;
+    height: 40px;
+}
+#application-nauticalfe-display-component---View3--link2{
+    color:black;
+    margin-left: 45%;
+}
+
+.freighttxt{
+    color: white !important;
+}
+.freightback{
+    background-color: rgb(41, 178, 178) !important;
+    height: 40px !important;
+}
+.heading1{
+    color:black !important;
+    margin-left: 45% !important; 
+}
+
+/* bidding controller page*/
+
+.biddingTileflex{
+    justify-content: space-around;
+    justify-content: center;
+}
+
+/* bid page icon */
+#application-nauticalfe-display-component---BidCont--openTileNumericId-value-inner{
+    color: orange;
+    
+}
+#application-nauticalfe-display-component---BidCont--closeTileNumericId-value-inner{
+    color: green;
+}
+#application-nauticalfe-display-component---BidCont--ongoingTileNumericId-value-inner{
+    color: orange;
+}
+
+/* for table border  */
+/* .sapMListTblSelCol, .sapMListTblCell, .sapMListTblNavCol {
+    border: none;
+} */
+.ongoingPanelPanel{
+    padding: 30px;
+    border:1px solid black;
+    background-color: white;
+    padding: 30px;
+    margin: 1%;
+    border-radius: 0%;
+    margin-right: 5%;
+}
+#application-nauticalfe-display-component---BidCont--PanelId-header{
+    border-bottom: none;
+}
+
+.sapMColumnHeader {
+    background-color: rgb(240, 235, 235);
+    border-top: 1px solid rgb(187, 186, 186);
+}
+#application-nauticalfe-display-component---BidCont--table-tblHeadNav{
+    background-color: rgb(240, 235, 235);
+    border-top: 1px solid rgb(187, 186, 186);
+
+}
+
+#application-nauticalfe-display-component---BiddingController--header2{
+    border-bottom: 1px solid rgb(187, 186, 186);
+}
+.Tile{
+    border-radius: 0%;
+}
+/* for bid obj page*/
+.bpanel1{
+    width: 20rem ;
+}
+
+.vPanel{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.text1{
+    display: block;
+}
+.botxt2{
+    margin-top: 15%;
+}
+.botxt3{
+    margin-top: 5%!important;
+    
+}
+.botxt1{
+   margin-top: 3%;
+   font-size: 22px;
+}
+.botxt7{
+    font-size:15px;
+}
+.vendorListHeading{
+    justify-content: space-around;
+    padding-top: 5rem;
+}
+.vTHeading{
+    font-size: 20px;
+}
+.cql1{
+    padding-top:8px;
+}
+#application-nauticalfe-display-component---BidObj--table-tblHeadNav{
+    background-color: rgb(240, 235, 235);
+    border-top: 1px solid rgb(187, 186, 186);
+
+}
+#application-nauticalfe-display-component---BidObj--boTxt6{
+    color: green;
+    margin-top: 15%;
+    font-size: 24px;
+}
+/*dashboard*/
+.vPanel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5 rem;
+}
+.panel{
+    padding: 40px;
+}
+.panel1{
+  margin-top: 8%;
+}
+.Trans{
+    padding: 10%; margin: 10% 15%;
+}
+.Mastr{
+    padding: 10%; margin: 10% 15%;
+}
+
+.nauticalImg{
+    max-width: 280px !important;
+    height: 270px !important;
+    margin-top: 10%;
+}
+
+.dashPanel2{
+    padding: 1rem;  
+}
+.sapUiSizeCompact .sapMBtnInner {
+    border-radius: 4px;
+}
+.mastrimg{
+    margin-top: 10% !important;
+}
+
+/*transaction data css*/
+.voy,.right,.FS {
+    margin: 5%;
+}
+/*master data css*/
+.one,.two,.three,.four,.five{
+    margin: 2%; margin-top: 7%;
+}
+/*for nautical image*/
+/* .sapMFlexItemAlignAuto {
+    align-self: center;
+} */
+.navContainerControl {
+	border-color: #888 !important;
+	border-style: solid !important;
+	border-width: 0.0625em !important;
+    min-width: 100% !important;
+     width: 200% !important; 
+}
+
+/*for Createvoyage plan */
+.sapMNav,.navContainerControl,.sapUiSmallMarginBottom
+{
+    min-width: 100%;
+}
+.animation{
+    display: none;
+}
+.sapUiSizeCompact .sapMBtnContent {
+    line-height: 1.500rem;
+    color: red;
+}
+#application-nauticalfe-display-component---TrCreateVoyagePlan--Select1-labelText{
+    line-height: 1.500rem;
+    color: red;   
+}
+.abc{
+    margin-left: 17%;
+    margin-top: -60px;
+}
+.VoyageOptions{
+    min-width: 100%;
+    margin-top: 200px;
+}
+/* for Createvoyageplan  vessel plan table  */
+.inner_tabel{
+   max-width: 100vw !important;
+}
+.table_container{
+    max-width: 100vw !important;
+    
+}
+.infoinputs{
+    margin: 0 20px;
+}
+ 
+heading{
+    margin-top: 80px;
+    margin-left: 20px;
+    font-size: 15px; 
+}
+
+
+/* bid detail section */
+.sapMListHdrText {
+background-color: #f5f6f7;
+font-size: small;
+}
+.sapUiSizeCompact .sapMListTblSelCol, .sapUiSizeCompact .sapMListTblSelCol>.sapMLIBSelectM, .sapUiSizeCompact .sapMListTblSelCol>.sapMLIBSelectS, .sapUiSizeCompact .sapMListTblHasNav .sapMListTblNavCol {
+    width: 2rem;
+    background: rgb(240, 235, 235); ;
+}
+
+
+.second_table{
+    margin-left: 25% !important;
+}
+
+
+
+/* voyage operations */
+.VoyageOperations{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+ 
+.HeadOptions{
+    margin-top: 70px;
+    font-size: 17px;
+    font-weight:bold;
+    margin-bottom:1%;
+    margin-left: 20px;
+}
+ 
+ 
+.buttonSpacing{
+    margin-bottom: 2%;
+    height: 5px;
+    margin-left: 20px;
+}
+ 
+/* Voyage data Plan page  */
+/* .voyageplannavigate{
+    border:none;
+    outline: none;
+} */
+ 
+ 
+/* Used for headings in pages created by anurag */
+.detailsheading{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight:bold;
+    margin-left: 20px;
+}
+ 
+ 
+/* Create Voyage(Plan) Page */
+.Row1{
+    margin-left: 5%;
+    margin-top : 20px;
+}
+ 
+.Row2{
+    margin-left: 4%;
+    margin-top : 20px;
+}
+ 
+.Row3{
+    margin-left: 4%;
+    margin-top : 20px;
+}
+ 
+.Row4{
+    margin-left: 4%;
+    margin-top : 20px;
+}
+
+.vesselOperations{
+    margin-top: 30px;
+    margin-left: 90px;
+}
+ 
+.navbar{
+    color: red;
+    font-size: 17px;
+    margin-top: 20px;
+}
+ 
+.vesselRefDetails{
+    margin-top: 1%;
+    margin-left: 2%;
+    border-color: 3px solid black;
+}
+ 
+.heading{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+ 
+.heading2{
+    margin-top: 30px;
+    margin-left: 600px;
+    font-size: 15px;
+    font-weight: bold;
+ 
+}
+ 
+.commercialbiddingdetails{
+    margin-top: 2%;
+    margin-left: 20%;
+}
+ 
+.techbutton{
+    margin-left: 10px;
+    width: 10px;
+}
+.commercialbutton{
+    margin-left: 610px;
+    width: 10px;
+    margin-top: -50px;
+}
+ 
+
+.techdropdown{
+    margin-left:350px;
+    margin-top: -20px;
+}
+ 
+.longText{
+    margin-left: 80px !important; 
+}
+ 
+.fclabel{
+    direction: ltr !important;
+}
+ 
+/* Vessel Plan/Actual page */
+.planOperations{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+ 
+.inputfields{
+    margin-top: -60px;
+}
+ 
+.infoinputs{
+    margin-left: 30px;
+}
+
+/* Footer part of create voyage plan page */
+.footerpagebuttons{
+    margin-bottom: 2%;
+    height: 5px;
+    margin-left: 20px;
+}
+.footercostplanbutton{
+    margin-left: 0%;
+    margin-top: 10px;
+}
+
+.footeractualplanbutton{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+
+.footeractualplanbuttonfilter{
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+.costplantables{
+    margin-left: 20px;
+    margin-top: 0%;
+}
+
+.footerheading{
+    margin-top: 0;
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Request for quotation page */
+.quoteoptions{
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.customRequiredLabel:before {
+    content: "* ";
+    color: red; 
+ }
+
+.optionsspacing{
+    margin-bottom: 5px;
+}
+
+.dropdownlabel{
+    color:red;
+}
+
+.headerOfPage{
+    background-color:black;
+    height: 40px;
+    width: auto;
+}
+
+/* Master data pages css */
+.masterFileUpload{
+    margin-left: 250px;
+    margin-top: 70px;
+}
+
+.masterheadings{
+    margin-left: 40px;
+    margin-top:30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.mastertables{
+    margin-top: 5px ;
+    margin-left: 30px !important;
+}
+
+.masteroptionsfooter{
+    margin-top: 400px;
+    margin-left: 1150px;
+}
+
+.masterbuttonsalign{
+    padding: 10px 15px;
+    margin-right: 10px;
+}
+
+/* file upload dialog box css */
+.MastDialogButtonAlign{
+    margin-top: 40px;
+    margin-left: 270px;
+}
+.header{
+    background-color: black;
+    color: white; 
+}

@@ -1,0 +1,424 @@
+{
+  "_version": "1.58.0",
+  "sap.app": {
+    "id": "nauticalfe",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.11.2",
+      "toolsId": "6a08fa2c-0d03-477f-9111-7fdb32101157"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.119.2",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.f": {},
+        "sap.suite.ui.generic.template": {},
+        "sap.ui.comp": {},
+        "sap.ui.generic.app": {},
+        "sap.ui.table": {},
+        "sap.ushell": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "nauticalfe.i18n.i18n"
+        }
+      },
+      "bidData":{
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "Bid.json"
+      },
+      "Vdata":{
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "Voyage.json"
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "nauticalfe.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
+      "routes": [
+        {
+          "name": "RouteView1",
+          "pattern": ":?query:",
+          "target": [
+            "TargetView1"
+          ]
+        },
+        {
+          "name": "RouteView2",
+          "pattern": "page2",
+          "target": [
+            "TargetView2"
+          ]
+        },
+        {
+          "name": "RouteView3",
+          "pattern": "page3",
+          "target": [
+            "TargetView3"
+          ]
+        },
+        {
+          "name": "RouteBidCont",
+          "pattern": "Bidding",
+          "target": [
+            "TargetBidCont"
+          ]
+        },
+        {
+          "name": "RouteBidObj",
+          "pattern": "BiddingObject/{bidObjPath}",
+          "target": [
+            "TargetBidObj"
+          ]
+        },
+        {
+          "name": "Routedash",
+          "pattern": "dashboard",
+          "target": [
+            "Targetdash"
+          ]
+        },
+        {
+          "name": "TransView",
+          "pattern": "TransViewObj",
+          "target": [
+            "TargetTransView"
+          ]
+        },
+        {
+          "name": "MastView",
+          "pattern": "MastViewObj",
+          "target": [
+            "TargetMastView"
+          ]
+        },
+        {
+          "name": "RouteTrChangeVoyage",
+          "pattern": "fr",
+          "target": [
+            "TargetTrChangeVoyage"
+          ]
+        },
+        {
+          "name": "TrVoyageOptions",
+          "pattern": "vo",
+          "target": [
+            "TargetTrVoyageOptions"
+          ]
+        },
+        {
+          "name": "TrCreateVoyage",
+          "pattern": "cvoy",
+          "target": [
+            "TargetTrCreateVoyage"
+          ]
+        },
+        {
+          "name": "TrCreateVoyageActual",
+          "pattern": "TrCreateVoyageActual",
+          "target": [
+            "TrCreateVoyageActual"
+          ]
+        },
+        {
+          "name": "TrCreateVoyagePlan",
+          "pattern": "cvoyPlan",
+          "target": [
+            "TargetTrCreateVoyagePlan"
+          ]
+        },
+        { 
+          "name":"TrRequestQuotation",
+          "pattern": "RequestQuotation",
+          "target":[
+            "TrRequestQuotation"
+          ]
+        },
+        { 
+          "name":"MasterVoyageType",
+          "pattern": "MasterVoyageType",
+          "target":[
+            "MasterVoyageType"
+          ]
+        },
+        {
+          "name":"MasterVesselType",
+          "pattern": "MasterVesselType",
+          "target":[
+            "MasterVesselType"
+          ]
+        },
+        { 
+          "name":"MastPortUpload",
+          "pattern": "MastPortUpload",
+          "target":[
+            "MastPortUpload"
+          ]
+        },
+        {
+            "name": "MasterCurrencyType",
+            "pattern": "MasterCurrencyType",
+            "target":[
+              "MasterCurrencyType"
+            ]
+        },
+        {
+          
+          "name": "ClassMaster",
+          "pattern": "ClassMaster",
+          "target":[
+            "ClassMaster"
+          ]
+        },
+        {
+          "name": "MastBidMaster",
+          "pattern": "MastBidMaster",
+          "target":[
+            "MastBidMaster"
+          ]
+        },
+        { 
+          "name":"MastCountryMasterUpload",
+          "pattern": "MastCountryMasterUpload",
+          "target":[
+            "MastCountryMasterUpload"
+          ]
+        },
+        { 
+          "name":"MastCountryMaster",
+          "pattern": "MastCountryMaster",
+          "target":[
+            "MastCountryMaster"
+          ]
+        },
+        { 
+          "name":"MastApiUrl",
+          "pattern": "MastApiUrl",
+          "target":[
+            "MastApiUrl"
+          ]
+        }
+        
+      ],
+      "targets": {
+        "TargetView1": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "View1",
+          "viewName": "View1"
+        },
+        "TargetView2": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "View2",
+          "viewName": "View2"
+        },
+        "TargetView3": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "View3",
+          "viewName": "View3"
+        },
+        "TargetBidCont": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "BidCont",
+          "viewName": "BidCont"
+        },
+        "TargetBidObj": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "BidObj",
+          "viewName": "BidObj"
+        },
+        "Targetdash": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "dash",
+          "viewName": "dash"
+        },
+        "TargetTransView": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "TransView",
+          "viewName": "TransView"
+        },
+        "TargetMastView": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "MastView",
+          "viewName": "MastView"
+        },
+        "TargetTrChangeVoyage": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "TrChangeVoyage",
+          "viewName": "TrChangeVoyage"
+        },
+        "TargetTrVoyageOptions": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "TrVoyageOptions",
+          "viewName": "TrVoyageOptions"
+        },
+        "TargetTrCreateVoyage": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "TrCreateVoyage",
+          "viewName": "TrCreateVoyage"
+        },
+        "TargetTrCreateVoyagePlan": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "TrCreateVoyagePlan",
+          "viewName": "TrCreateVoyagePlan"
+        },
+        "TrRequestQuotation": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "TrRequestQuotation",
+          "viewName": "TrRequestQuotation"
+        },
+        "MasterVoyageType":{
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "MasterVoyageType",
+          "viewName": "MasterVoyageType"
+        },
+        "MasterVesselType":{
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "MasterVesselType",
+          "viewName": "MasterVesselType"
+
+        },
+        "MastPortUpload": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "MastPortUpload",
+          "viewName": "MastPortUpload"
+        },
+        "MasterCurrencyType":{
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "MasterCurrencyType",
+          "viewName": "MasterCurrencyType"
+        },
+        "ClassMaster":{
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "ClassMaster",
+          "viewName": "ClassMaster"
+        },
+        "MastBidMaster":{
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "MastBidMaster",
+          "viewName": "MastBidMaster"
+        },
+        "MastCountryMasterUpload":{
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "MastCountryMasterUpload",
+          "viewName": "MastCountryMasterUpload" 
+        },
+        "MastCountryMaster":{
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "MastCountryMaster",
+          "viewName": "MastCountryMaster" 
+        },
+        "MastApiUrl":{
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "MastApiUrl",
+          "viewName": "MastApiUrl" 
+        },
+        "TrCreateVoyageActual":{
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "TrCreateVoyageActual",
+          "viewName": "TrCreateVoyageActual" 
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "nauticalfe.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    }
+  }
+}

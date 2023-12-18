@@ -1,0 +1,55 @@
+<mvc:View xmlns:cards="sap.f.cards" controllerName="nauticalfe.controller.MastApiUrl"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:core="sap.ui.core"
+    xmlns="sap.m" xmlns:tnt="sap.tnt">
+        <Bar id="_IDGenBar1" class="_IDGenBar1">
+        <contentLeft>
+           <Button text="New Entries"/>
+           <Button text="Copy As"/>
+           <Button text="Delete"/>
+           <Button text="Undo Change"/>
+           <Button text="Select All"/>
+           <Button text="Select Block"/>
+           <Button text="Deselect All"/>
+	        <Button id="button" icon="sap-icon://slim-arrow-down" iconFirst="false" text="More" press="onPress" ariaHasPopup="Menu"/>
+        </contentLeft>
+        <contentRight>
+            <Button icon="sap-icon://print"/>
+            <Button text="Display"></Button> 
+            <Button text="Exit" press="MastPage"></Button>
+        </contentRight>
+        </Bar>
+        <Text text="API URL Path Master" class="masterheadings"/>
+        <Table width="100%" class="mastertables">
+            <columns>
+                <Column width="40px">
+                    <Label text=" "></Label>
+                </Column>
+                <Column>
+                    <Label text="Process Indicator"></Label>
+                </Column>
+                <Column>
+                    <Label text="MARINE TRAFFIC API KEY"></Label>
+                </Column>
+                <Column>
+                    <Label text="Path"></Label>
+                </Column>
+                <Column>
+                    <Label text="Path"></Label>
+                </Column>
+            </columns>
+            <ColumnListItem >
+                <cells>
+                    <CheckBox ></CheckBox>
+                    <Text text="{}"></Text>
+                    <Text text="{}"></Text>
+                    <Text text="{}"></Text>
+                    <Text text="{}"></Text>
+                </cells>
+            </ColumnListItem>
+        </Table>
+        <HBox class="masteroptionsfooter">
+            <Button text="Save" class="masterbuttonsalign"></Button>
+            <Button text="Cancel" class="masterbuttonsalign" press="MastPage"></Button>
+        </HBox>
+</mvc:View>

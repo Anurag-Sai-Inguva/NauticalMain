@@ -1,0 +1,67 @@
+<mvc:View xmlns:cards="sap.f.cards" controllerName="nauticalfe.controller.MastCountryMaster"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:core="sap.ui.core"
+    xmlns="sap.m" xmlns:tnt="sap.tnt">
+        <Bar id="_IDGenBar1" class="_IDGenBar1">
+        <contentLeft>
+           <Button text="New Entries" press="newEntry"/>
+           <Button text="Copy As"/>
+           <Button text="Delete"/>
+           <Button text="Undo Change"/>
+           <Button text="Select All"/>
+           <Button text="Select Block"/>
+           <Button text="Deselect All"/>
+	        <Button id="button" icon="sap-icon://slim-arrow-down" iconFirst="false" text="More" press="onPress" ariaHasPopup="Menu"/>
+        </contentLeft>
+        <contentRight>
+            <Button icon="sap-icon://print"/>
+            <Button text="Display"></Button> 
+            <Button text="Exit" press="MastPage"></Button>
+        </contentRight>
+        </Bar>
+        <Text text="Country Master tcode" class="masterheadings"/>
+          <Table width="60%" class="mastertables" id="maintable">
+            <columns>
+                <Column width="40px">
+                    <Label text=" "></Label>
+                </Column>
+                <Column>
+                    <Label text="Value"></Label>
+                </Column>
+                <Column>
+                    <Label text="Field Description"></Label>
+                </Column>
+            </columns>
+            <ColumnListItem >
+                <cells>
+                    <CheckBox></CheckBox>
+                    <Text text="{}"></Text>
+                    <Input value="" editable="true"></Input>
+                </cells>
+            </ColumnListItem>
+        </Table>
+        <Table width="60%" class="mastertables" id="entrytable" visible="false">
+            <columns>
+                <Column width="40px">
+                    <Label text=" "></Label>
+                </Column>
+                <Column>
+                    <Label text="Value"></Label>
+                </Column>
+                <Column>
+                    <Label text="Field Description"></Label>
+                </Column>
+            </columns>
+            <ColumnListItem >
+                <cells>
+                    <CheckBox></CheckBox>
+                    <Input value="" editable="true"></Input>
+                    <Input value="" editable="true"></Input>
+                </cells>
+            </ColumnListItem>
+        </Table>
+        <HBox class="masteroptionsfooter">
+            <Button text="Save" class="masterbuttonsalign" press="createEntry"></Button>
+            <Button text="Cancel" class="masterbuttonsalign" press="MastPage"></Button>
+        </HBox>
+</mvc:View>

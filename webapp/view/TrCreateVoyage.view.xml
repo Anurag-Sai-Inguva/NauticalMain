@@ -1,0 +1,11 @@
+<mvc:View xmlns:tnt="sap.tnt"
+xmlns:form="sap.ui.layout.form"
+ xmlns:l="sap.ui.layout"
+ controllerName="nauticalfe.controller.TrCreateVoyage"
+    xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+    <Text text="Selection Option" id="HeadOptions"/>
+    <VBox id="VoyageOperations">
+        <Button text="Plan Info.Details" width="300px" class="buttonSpacing" press="voyagePlan" icon="sap-icon://settings"></Button>
+        <Button text="Actual Info.Details" width="300px" class="buttonSpacing" press="voyageActual"></Button>
+    </VBox>
+   </mvc:View> 
